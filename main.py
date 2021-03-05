@@ -152,6 +152,7 @@ class Ui_Dialog(object):
         self.pushButton_7.setText(_translate("Dialog", "Browse Input Video"))
         self.pushButton_7.clicked.connect(self.pushButton_handler)
         self.pushButton_8.setText(_translate("Dialog", "Browse ground frame image"))
+        self.pushButton_8.clicked.connect(self.pushButton_handler)
         self.pushButton_9.setText(_translate("Dialog", "Play selected video"))
         self.pushButton_10.setText(_translate("Dialog", "Close"))
         self.label.setText(_translate("Dialog", "VIDEO"))
