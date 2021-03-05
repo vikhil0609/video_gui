@@ -162,6 +162,7 @@ class Ui_Dialog(object):
         self.pushButton_7.clicked.connect(self.pushButton_handler)
         self.pushButton_8.clicked.connect(self.pushButton_handler)     
         self.checkBox.stateChanged.connect((self.checkBoxChangedAction))  
+        self.pushButton_10.clicked.connect(QtWidgets.qApp.quit)
 
     def pushButton_handler(self):
         # print("Button pressed")
@@ -182,7 +183,6 @@ class Ui_Dialog(object):
         else:
             print("Not Selected.")
         
-
 
             
 if __name__ == "__main__":
