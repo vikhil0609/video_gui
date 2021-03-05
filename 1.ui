@@ -116,10 +116,17 @@ background-color: rgb(255, 170, 0);</string>
    <property name="geometry">
     <rect>
      <x>0</x>
-     <y>60</y>
+     <y>59</y>
      <width>981</width>
-     <height>20</height>
+     <height>21</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
    </property>
    <property name="orientation">
     <enum>Qt::Horizontal</enum>
@@ -232,6 +239,13 @@ background-color: rgb(255, 170, 0);</string>
      <width>20</width>
      <height>501</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>7</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
    </property>
    <property name="orientation">
     <enum>Qt::Vertical</enum>
@@ -357,8 +371,6 @@ border-color: rgb(0, 0, 0);</string>
   <zorder>pushButton_6</zorder>
   <zorder>line</zorder>
   <zorder>pushButton_8</zorder>
-  <zorder>verticalSpacer</zorder>
-  <zorder>horizontalSpacer</zorder>
   <zorder>line_3</zorder>
   <zorder>pushButton_9</zorder>
   <zorder>pushButton_10</zorder>

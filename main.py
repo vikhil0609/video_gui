@@ -10,6 +10,7 @@
 
 from PyQt5 import QtCore, QtGui, QtWidgets
 from PyQt5.QtWidgets import QDialog, QApplication, QFileDialog
+from functools import partial 
 
 class Ui_Dialog(object):
     def setupUi(self, Dialog):
@@ -150,12 +151,17 @@ class Ui_Dialog(object):
         self.pushButton_5.setText(_translate("Dialog", "DEMO"))
         self.pushButton_6.setText(_translate("Dialog", "DEMO"))
         self.pushButton_7.setText(_translate("Dialog", "Browse Input Video"))
-        self.pushButton_7.clicked.connect(self.pushButton_handler)
         self.pushButton_8.setText(_translate("Dialog", "Browse ground frame image"))
-        self.pushButton_8.clicked.connect(self.pushButton_handler)
         self.pushButton_9.setText(_translate("Dialog", "Play selected video"))
         self.pushButton_10.setText(_translate("Dialog", "Close"))
         self.label.setText(_translate("Dialog", "VIDEO"))
+
+        self.list_of_checkboxes = ["self.checkBox","self.checkBox_2","self.checkBox_3","self.checkBox_4","self.checkBox_5","self.checkBox_6"]
+
+        #CLICKED FUNCTIONS
+        self.pushButton_7.clicked.connect(self.pushButton_handler)
+        self.pushButton_8.clicked.connect(self.pushButton_handler)     
+        self.checkBox.stateChanged.connect((self.checkBoxChangedAction))  
 
     def pushButton_handler(self):
         # print("Button pressed")
@@ -168,6 +174,16 @@ class Ui_Dialog(object):
 
         with open(path, "r") as f:
             print(f.readline())
+
+    def checkBoxChangedAction(self, state):
+        if (QtCore.Qt.Checked == state):
+            print("Selected.")
+            self.checkBox_2.setCheckable(False)
+        else:
+            print("Not Selected.")
+        
+
+
             
 if __name__ == "__main__":
     import sys
