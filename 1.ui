@@ -355,6 +355,22 @@ border-color: rgb(0, 0, 0);</string>
     <number>-2</number>
    </property>
   </widget>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>90</y>
+     <width>151</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+  </widget>
   <zorder>pushButton_7</zorder>
   <zorder>checkBox</zorder>
   <zorder>checkBox_2</zorder>
@@ -375,6 +391,7 @@ border-color: rgb(0, 0, 0);</string>
   <zorder>pushButton_9</zorder>
   <zorder>pushButton_10</zorder>
   <zorder>label</zorder>
+  <zorder>frame</zorder>
  </widget>
  <resources/>
  <connections/>
