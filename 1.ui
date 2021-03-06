@@ -370,6 +370,19 @@ border-color: rgb(0, 0, 0);</string>
    <property name="frameShadow">
     <enum>QFrame::Raised</enum>
    </property>
+   <widget class="QVideoWidget" name="video1" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>121</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(0, 0, 0);</string>
+    </property>
+   </widget>
   </widget>
   <zorder>pushButton_7</zorder>
   <zorder>checkBox</zorder>
@@ -393,6 +406,14 @@ border-color: rgb(0, 0, 0);</string>
   <zorder>label</zorder>
   <zorder>frame</zorder>
  </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QVideoWidget</class>
+   <extends>QWidget</extends>
+   <header>PyQt5.QtMultimediaWidgets</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
  <resources/>
  <connections/>
 </ui>
